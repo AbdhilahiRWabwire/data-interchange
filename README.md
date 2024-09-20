@@ -14,10 +14,10 @@ Data Interchange Format Implementations
 ## Features
 
 - Extensible Markup Language
-- JavaScript Object Notation[JSON]
-- Markdown[CommonMark]
-- Tom's Obvious Minimal Language[TOML]
-- Yet Another Markup Language[YAML]
+- [JavaScript Object Notation][JSON]
+- [Markdown][CommonMark]
+- [Tom's Obvious Minimal Language][TOML]
+- [Yet Another Markup Language][YAML]
 
 ## Build
 
