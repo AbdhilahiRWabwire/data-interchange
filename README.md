@@ -1,4 +1,3 @@
-[C Language]: https://learn.microsoft.com/en-us/cpp/c-language
 [CommonMark]:https://commonmark.org/
 [Fleet]: https://jetbrains.com/fleet/
 [JSON]: https://www.json.org/json-en.html
@@ -22,7 +21,6 @@ Data Interchange Format Implementations
 
 ## Build
 
-- [C][C Language]
 - [JetBrains Fleet][Fleet]
 - [Visual Studio Code][VSCode]
 - [Zig][Zig Language]
@@ -36,5 +34,5 @@ zig build
 ## Install
 
 ```shell
-echo 'export PATH="$PATH:/usr/lib/htmain"' >> ~/.profile
+echo 'export PATH="$PATH:/usr/lib/htdi"' >> ~/.profile
 ```
