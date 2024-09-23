@@ -18,7 +18,7 @@ Data Interchange Format Implementations
 - [JavaScript Object Notation][JSON]
 - [Markdown][CommonMark]
 - [Tom's Obvious Minimal Language][TOML]
-- [Yet Another Markup Language][YAML]
+- [YAML Ain't Markup Language][YAML]
 
 ## Build
 
