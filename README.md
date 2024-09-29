@@ -1,5 +1,4 @@
 [CommonMark]:https://commonmark.org/
-[Fleet]: https://jetbrains.com/fleet/
 [JSON]: https://www.json.org/json-en.html
 [TOML]: https://toml.io/en/
 [VSCode]: https://code.visualstudio.com/docs
@@ -21,7 +20,6 @@ Data Interchange Format Implementations
 
 ## Build
 
-- [JetBrains Fleet][Fleet]
 - [Visual Studio Code][VSCode]
 - [Zig][Zig Language]
 
