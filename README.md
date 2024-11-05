@@ -32,5 +32,5 @@ zig build
 ## Install
 
 ```shell
-echo 'export PATH="$PATH:/usr/lib/htdi"' >> ~/.profile
+echo 'export PATH="$PATH:/usr/local/bin/htdi"' >> ~/.bashrc && sudo echo 'export PATH="$PATH:/usr/local/bin/htdi"' >> /etc/skel/.bashrc
 ```
