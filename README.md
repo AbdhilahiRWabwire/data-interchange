@@ -41,5 +41,4 @@ zig build
 
 ```shell
 echo 'export PATH="$PATH:/usr/local/bin/htdi"' >> ~/.bashrc
-sudo echo 'export PATH="$PATH:/usr/local/bin/htdi"' >> /etc/skel/.bashrc
 ```
