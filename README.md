@@ -13,16 +13,11 @@ Data Interchange Format and Network Protocol Implementations
 ## Features
 
 - Comma-Separated Values
-- DNS Protocol
 - Environment Variables
 - [Hypertext Transfer Protocol][HTTP]
-- Internet Protocol
 - [JavaScript Object Notation][JSON]
 - [Markdown][CommonMark]
 - [Tom's Obvious Minimal Language][TOML]
-- Transmission Control Protocol
-- Transport Layer Security
-- User Datagram Protocol
 - Web Socket Protocol
 - [YAML Ain't Markup Language][YAML]
 
