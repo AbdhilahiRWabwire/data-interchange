@@ -1,4 +1,5 @@
 [CommonMark]:https://commonmark.org/
+[HTML]: https://html.spec.whatwg.org/multipage/
 [HTTP]: https://developer.mozilla.org/en-US/docs/Web/HTTP
 [JSON]: https://www.json.org/json-en.html
 [TOML]: https://toml.io/en/
@@ -15,6 +16,7 @@ Data Interchange Format and Network Protocol Implementations
 
 - Comma-Separated Values
 - Environment Variables
+- [Hypertext Markup Language][HTML]
 - [Hypertext Transfer Protocol][HTTP]
 - [JavaScript Object Notation][JSON]
 - [Markdown][CommonMark]
