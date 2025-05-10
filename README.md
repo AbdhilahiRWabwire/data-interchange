@@ -16,6 +16,7 @@ Data Interchange Format and Network Protocol Implementations
 
 - Comma-Separated Values
 - Environment Variables
+- Extensible Markup Language
 - [Hypertext Markup Language][HTML]
 - [Hypertext Transfer Protocol][HTTP]
 - [JavaScript Object Notation][JSON]
