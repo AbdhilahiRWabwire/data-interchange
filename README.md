@@ -3,7 +3,6 @@
 [HTTP]: https://developer.mozilla.org/en-US/docs/Web/HTTP
 [JSON]: https://www.json.org/json-en.html
 [TOML]: https://toml.io/en/
-[VSCode]: https://code.visualstudio.com/docs
 [Web Transport]: https://w3c.github.io/webtransport/
 [YAML]: https://yaml.org/
 [Zig Language]: https://ziglang.org/
@@ -28,7 +27,6 @@ Data Interchange Format and Network Protocol Implementations
 
 ## Build
 
-- [Visual Studio Code][VSCode]
 - [Zig][Zig Language]
 
 ```shell
