@@ -37,5 +37,5 @@ zig build
 ## Install
 
 ```shell
-echo 'export PATH="$PATH:/usr/local/bin/htdi"' >> ~/.bashrc
+sudo install ./htdi /usr/local/bin/
 ```
