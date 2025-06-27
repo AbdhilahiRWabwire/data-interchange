@@ -1,5 +1,4 @@
 const standard: type = @import("std");
-const allocator = standard.heap.page_allocator;
 
 // Hypertext Transfer Protocol Status Code Definition
 pub const HTTPStatusCode: type = u8;
@@ -134,9 +133,8 @@ pub const HTTP_NOT_EXTENDED: HTTPStatusText = "Not Extended";
 pub const HTTP_NETWORK_AUTHENTICATION_REQUIRED: HTTPStatusText = "Network Authentication Required";
 
 // Hypertext Transfer Protocol Status Code and Status Text Hash Map
-pub fn hypertext_transfer_status_codes() type {
+pub fn hypertext_transfer_status_codes(allocator: type) type {
     const http_status_codes: type = standard.AutoHashMap(HTTPStatusCode, HTTPStatusText).init(allocator);
-    defer http_status_codes.deinit();
 
     try http_status_codes.put(HTTP_ONE_HUNDRED, HTTP_CONTINUE);
     try http_status_codes.put(HTTP_ONE_HUNDRED_ONE, HTTP_SWITCHING_PROTOCOLS);

@@ -4,6 +4,6 @@ const standard: type = @import("std");
 pub const HTTPClient: type = struct {};
 
 // Hypertext Transer Protocol Client
-pub fn hypertext_transfer_client() u8 {
-    return u8;
+pub fn hypertext_transfer_client() type {
+    return type;
 }
