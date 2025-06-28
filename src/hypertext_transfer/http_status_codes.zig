@@ -1,10 +1,10 @@
 const standard: type = @import("std");
 
 // Hypertext Transfer Protocol Status Code Definition
-pub const HTTPStatusCode: type = u8;
+pub const HTTPStatusCode: type = [4]u8;
 
 // Hypertext Transfer Protocol Status Text Definition
-pub const HTTPStatusText: type = u8;
+pub const HTTPStatusText: type = []u8;
 
 // Hypertext Transfer Protocol Status Codes
 pub const HTTP_ONE_HUNDRED: HTTPStatusCode = "100";

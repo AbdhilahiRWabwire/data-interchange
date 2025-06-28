@@ -1,7 +1,7 @@
 const standard: type = @import("std");
 
 // Hypertext Transfer Protocol Method Defintion
-pub const HTTPMethod: type = u8;
+pub const HTTPMethod: type = []u8;
 
 // Hypertext Transfer Protocol Methods
 pub const HTTP_CONNECT: HTTPMethod = "CONNECT";
@@ -15,8 +15,8 @@ pub const HTTP_PUT: HTTPMethod = "PUT";
 pub const HTTP_TRACE: HTTPMethod = "TRACE";
 
 // Hypertext Transfer Protocol Method Vector
-pub fn hypertext_transfer_methods() @Vector(9, HTTPMethod) {
-    const http_methods: @Vector(9, HTTPMethod) = @Vector(9, HTTPMethod){
+pub fn hypertext_transfer_methods() @Vector(10, HTTPMethod) {
+    const http_methods: @Vector(10, HTTPMethod) = @Vector(10, HTTPMethod){
         HTTP_CONNECT,
         HTTP_DELETE,
         HTTP_GET,

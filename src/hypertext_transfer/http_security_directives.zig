@@ -1,7 +1,7 @@
 pub const standard: type = @import("std");
 
 // Hypertext Transfer Protocol Content Security Policy Directive Definition
-pub const HTTPSecurityDirective: type = u8;
+pub const HTTPSecurityDirective: type = []u8;
 
 // Hypertext Transfer Protocol Content Security Policy Directives
 pub const HTTP_BASE_URI: HTTPSecurityDirective = "base-uri";
@@ -30,8 +30,8 @@ pub const HTTP_UPGRADE_INSECURE_REQUESTS: HTTPSecurityDirective = "upgrade-insec
 pub const HTTP_WORKER_SOURCE: HTTPSecurityDirective = "worker-src";
 
 // Hypertext Transfer Protocol Content Security Policy Directive Vector
-pub fn hypertext_transfer_security_directives() @Vector(24, HTTPSecurityDirective) {
-    const http_security_directives: @Vector(24, HTTPSecurityDirective) = @Vector(24, HTTPSecurityDirective){
+pub fn hypertext_transfer_security_directives() @Vector(25, HTTPSecurityDirective) {
+    const http_security_directives: @Vector(25, HTTPSecurityDirective) = @Vector(25, HTTPSecurityDirective){
         HTTP_BASE_URI,
         HTTP_CHILD_SOURCE,
         HTTP_CONNECT_SOURCE,

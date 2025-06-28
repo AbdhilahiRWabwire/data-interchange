@@ -1,7 +1,7 @@
 const standard: type = @import("std");
 
 // Hypertext Transfer Protocol Header Definition
-pub const HTTPHeader: type = u8;
+pub const HTTPHeader: type = []u8;
 
 // Hypertext Transfer Protocol Headers
 pub const HTTP_ACCEPT: HTTPHeader = "Accept";
@@ -104,8 +104,8 @@ pub const HTTP_X_CONTENT_TYPE_OPTIONS: HTTPHeader = "X-Content-Type-Options";
 pub const HTTP_X_FRAME_OPTIONS: HTTPHeader = "X-Frame-Options";
 
 // Hypertext Transfer Protocol Header Vector
-pub fn hypertext_transfer_headers() @Vector(96, HTTPHeader) {
-    const http_headers: @Vector(96, HTTPHeader) = @Vector(96, HTTPHeader){
+pub fn hypertext_transfer_headers() @Vector(97, HTTPHeader) {
+    const http_headers: @Vector(97, HTTPHeader) = @Vector(97, HTTPHeader){
         HTTP_ACCEPT,
         HTTP_ACCEPT_CLIENT_HINT,
         HTTP_ACCEPT_ENCODING,
