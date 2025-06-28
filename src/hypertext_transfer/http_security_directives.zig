@@ -4,30 +4,30 @@ pub const standard: type = @import("std");
 pub const HTTPSecurityDirective: type = []u8;
 
 // Hypertext Transfer Protocol Content Security Policy Directives
-pub const HTTP_BASE_URI: HTTPSecurityDirective = "base-uri";
-pub const HTTP_CHILD_SOURCE: HTTPSecurityDirective = "child-src";
-pub const HTTP_CONNECT_SOURCE: HTTPSecurityDirective = "connect-src";
-pub const HTTP_DEFAULT_SOURCE: HTTPSecurityDirective = "default-src";
-pub const HTTP_FONT_SOURCE: HTTPSecurityDirective = "font-src";
-pub const HTTP_FORM_ACTION: HTTPSecurityDirective = "form-action";
-pub const HTTP_FRAME_ANCESTORS: HTTPSecurityDirective = "frame-ancestors";
-pub const HTTP_FRAME_SOURCE: HTTPSecurityDirective = "frame-src";
-pub const HTTP_IMAGE_SOURCE: HTTPSecurityDirective = "img-src";
-pub const HTTP_MANIFEST_SOURCE: HTTPSecurityDirective = "manifest-src";
-pub const HTTP_MEDIA_SOURCE: HTTPSecurityDirective = "media-src";
-pub const HTTP_OBJECT_SOURCE: HTTPSecurityDirective = "object-src";
-pub const HTTP_REPORT_TO: HTTPSecurityDirective = "report-to";
-pub const HTTP_REQUIRE_TRUSTED_TYPES_FOR: HTTPSecurityDirective = "require-trusted-types-for";
-pub const HTTP_SANDBOX: HTTPSecurityDirective = "sandbox";
-pub const HTTP_SCRIPT_SOURCE: HTTPSecurityDirective = "script-src";
-pub const HTTP_SCRIPT_SOURCE_ATTRIBUTE: HTTPSecurityDirective = "script-src-attr";
-pub const HTTP_SCRIPT_SOURCE_ELEMENT: HTTPSecurityDirective = "script-src-elem";
-pub const HTTP_STYLE_SOURCE: HTTPSecurityDirective = "style-src";
-pub const HTTP_STYLE_SOURCE_ATTRIBUTE: HTTPSecurityDirective = "style-src-attr";
-pub const HTTP_STYLE_SOURCE_ELEMENT: HTTPSecurityDirective = "style-src-elem";
-pub const HTTP_TRUSTED_TYPES: HTTPSecurityDirective = "trusted-types";
-pub const HTTP_UPGRADE_INSECURE_REQUESTS: HTTPSecurityDirective = "upgrade-insecure-requests";
-pub const HTTP_WORKER_SOURCE: HTTPSecurityDirective = "worker-src";
+pub const HTTP_BASE_URI: [9]HTTPSecurityDirective = "base-uri";
+pub const HTTP_CHILD_SOURCE: [10]HTTPSecurityDirective = "child-src";
+pub const HTTP_CONNECT_SOURCE: [12]HTTPSecurityDirective = "connect-src";
+pub const HTTP_DEFAULT_SOURCE: [12]HTTPSecurityDirective = "default-src";
+pub const HTTP_FONT_SOURCE: [9]HTTPSecurityDirective = "font-src";
+pub const HTTP_FORM_ACTION: [12]HTTPSecurityDirective = "form-action";
+pub const HTTP_FRAME_ANCESTORS: [16]HTTPSecurityDirective = "frame-ancestors";
+pub const HTTP_FRAME_SOURCE: [10]HTTPSecurityDirective = "frame-src";
+pub const HTTP_IMAGE_SOURCE: [8]HTTPSecurityDirective = "img-src";
+pub const HTTP_MANIFEST_SOURCE: [14]HTTPSecurityDirective = "manifest-src";
+pub const HTTP_MEDIA_SOURCE: [10]HTTPSecurityDirective = "media-src";
+pub const HTTP_OBJECT_SOURCE: [12]HTTPSecurityDirective = "object-src";
+pub const HTTP_REPORT_TO: [10]HTTPSecurityDirective = "report-to";
+pub const HTTP_REQUIRE_TRUSTED_TYPES_FOR: [26]HTTPSecurityDirective = "require-trusted-types-for";
+pub const HTTP_SANDBOX: [8]HTTPSecurityDirective = "sandbox";
+pub const HTTP_SCRIPT_SOURCE: [12]HTTPSecurityDirective = "script-src";
+pub const HTTP_SCRIPT_SOURCE_ATTRIBUTE: [16]HTTPSecurityDirective = "script-src-attr";
+pub const HTTP_SCRIPT_SOURCE_ELEMENT: [16]HTTPSecurityDirective = "script-src-elem";
+pub const HTTP_STYLE_SOURCE: [10]HTTPSecurityDirective = "style-src";
+pub const HTTP_STYLE_SOURCE_ATTRIBUTE: [15]HTTPSecurityDirective = "style-src-attr";
+pub const HTTP_STYLE_SOURCE_ELEMENT: [15]HTTPSecurityDirective = "style-src-elem";
+pub const HTTP_TRUSTED_TYPES: [14]HTTPSecurityDirective = "trusted-types";
+pub const HTTP_UPGRADE_INSECURE_REQUESTS: [26]HTTPSecurityDirective = "upgrade-insecure-requests";
+pub const HTTP_WORKER_SOURCE: [12]HTTPSecurityDirective = "worker-src";
 
 // Hypertext Transfer Protocol Content Security Policy Directive Vector
 pub fn hypertext_transfer_security_directives() @Vector(25, HTTPSecurityDirective) {

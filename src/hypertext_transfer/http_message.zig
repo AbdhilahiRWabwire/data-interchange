@@ -11,7 +11,7 @@ pub const HTTPBody: type = type;
 // Hypertext Transfer Protocol Message Definition
 pub const HypertextTransferMessage: type = struct {
     body: ?HTTPBody,
-    headers: @Vector(97, headers.HTTPHeader),
+    headers: @Vector(100, headers.HTTPHeader),
     method: methods.HTTPMethod,
     security_directives: ?@Vector(25, security.HTTPSecurityDirective),
     status_code: status.HTTPStatusCode,
