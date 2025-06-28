@@ -1,7 +1,7 @@
 const standard: type = @import("std");
 
 // Hypertext Transfer Protocol Version Definition
-pub const HTTPVersion: type = [9]u8;
+pub const HTTPVersion: type = [10]u8;
 
 // Hypertext Transfer Protocol Versions
 pub const HTTP_VERSION_ONE: HTTPVersion = "HTTP/1.1";

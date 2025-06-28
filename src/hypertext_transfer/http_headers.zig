@@ -35,8 +35,7 @@ pub const HTTP_CONTENT_LENGTH: HTTPHeader = "Content-Length";
 pub const HTTP_CONTENT_LOCATION: HTTPHeader = "Content-Location";
 pub const HTTP_CONTENT_RANGE: HTTPHeader = "Content-Range";
 pub const HTTP_CONTENT_SECURITY_POLICY: HTTPHeader = "Content-Security-Policy";
-pub const HTTP_CONTENT_SECURITY_POLICY_REPORT_ONLY: HTTPHeader =
-    "Content-Security-Policy-Report-Only";
+pub const HTTP_CONTENT_SECURITY_POLICY_REPORT_ONLY: HTTPHeader = "Content-Security-Policy-Report-Only";
 pub const HTTP_CONTENT_TYPE: HTTPHeader = "Content-Type";
 pub const HTTP_COOKIE: HTTPHeader = "Cookie";
 pub const HTTP_CROSS_ORIGIN_EMBEDDER_POLICY: HTTPHeader = "Cross-Origin-Embedder-Policy";

@@ -13,7 +13,7 @@ pub const HypertextTransferMessage: type = struct {
     body: ?HTTPBody,
     headers: @Vector(100, headers.HTTPHeader),
     method: methods.HTTPMethod,
-    security_directives: ?@Vector(25, security.HTTPSecurityDirective),
+    security_directives: ?@Vector(26, security.HTTPSecurityDirective),
     status_code: status.HTTPStatusCode,
     status_text: status.HTTPStatusText,
     version: versions.HTTPVersion,

@@ -4,11 +4,11 @@ pub const standard: type = @import("std");
 pub const HTTPSecurityDirective: type = []u8;
 
 // Hypertext Transfer Protocol Content Security Policy Directives
-pub const HTTP_BASE_URI: [9]HTTPSecurityDirective = "base-uri";
+pub const HTTP_BASE_URI: [10]HTTPSecurityDirective = "base-uri";
 pub const HTTP_CHILD_SOURCE: [10]HTTPSecurityDirective = "child-src";
 pub const HTTP_CONNECT_SOURCE: [12]HTTPSecurityDirective = "connect-src";
 pub const HTTP_DEFAULT_SOURCE: [12]HTTPSecurityDirective = "default-src";
-pub const HTTP_FONT_SOURCE: [9]HTTPSecurityDirective = "font-src";
+pub const HTTP_FONT_SOURCE: [10]HTTPSecurityDirective = "font-src";
 pub const HTTP_FORM_ACTION: [12]HTTPSecurityDirective = "form-action";
 pub const HTTP_FRAME_ANCESTORS: [16]HTTPSecurityDirective = "frame-ancestors";
 pub const HTTP_FRAME_SOURCE: [10]HTTPSecurityDirective = "frame-src";
@@ -23,15 +23,15 @@ pub const HTTP_SCRIPT_SOURCE: [12]HTTPSecurityDirective = "script-src";
 pub const HTTP_SCRIPT_SOURCE_ATTRIBUTE: [16]HTTPSecurityDirective = "script-src-attr";
 pub const HTTP_SCRIPT_SOURCE_ELEMENT: [16]HTTPSecurityDirective = "script-src-elem";
 pub const HTTP_STYLE_SOURCE: [10]HTTPSecurityDirective = "style-src";
-pub const HTTP_STYLE_SOURCE_ATTRIBUTE: [15]HTTPSecurityDirective = "style-src-attr";
-pub const HTTP_STYLE_SOURCE_ELEMENT: [15]HTTPSecurityDirective = "style-src-elem";
+pub const HTTP_STYLE_SOURCE_ATTRIBUTE: [16]HTTPSecurityDirective = "style-src-attr";
+pub const HTTP_STYLE_SOURCE_ELEMENT: [16]HTTPSecurityDirective = "style-src-elem";
 pub const HTTP_TRUSTED_TYPES: [14]HTTPSecurityDirective = "trusted-types";
 pub const HTTP_UPGRADE_INSECURE_REQUESTS: [26]HTTPSecurityDirective = "upgrade-insecure-requests";
 pub const HTTP_WORKER_SOURCE: [12]HTTPSecurityDirective = "worker-src";
 
 // Hypertext Transfer Protocol Content Security Policy Directive Vector
-pub fn hypertext_transfer_security_directives() @Vector(25, HTTPSecurityDirective) {
-    const http_security_directives: @Vector(25, HTTPSecurityDirective) = @Vector(25, HTTPSecurityDirective){
+pub fn hypertext_transfer_security_directives() @Vector(26, HTTPSecurityDirective) {
+    const http_security_directives: @Vector(26, HTTPSecurityDirective) = @Vector(26, HTTPSecurityDirective){
         HTTP_BASE_URI,
         HTTP_CHILD_SOURCE,
         HTTP_CONNECT_SOURCE,
