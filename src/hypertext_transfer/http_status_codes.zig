@@ -98,11 +98,11 @@ pub const HTTP_FORBIDDEN: [9]HTTPStatusText = "Forbidden";
 pub const HTTP_NOT_FOUND: [9]HTTPStatusText = "Not Found";
 pub const HTTP_METHOD_NOT_ALLOWED: [18]HTTPStatusText = "Method Not Allowed";
 pub const HTTP_NOT_ACCEPTABLE: [14]HTTPStatusText = "Not Acceptable";
-pub const HTTP_PROXY_AUTHENTICATION_REQUIRED: [28]HTTPStatusText = "Proxy Authentication Required";
+pub const HTTP_PROXY_AUTHENTICATION_REQUIRED: [29]HTTPStatusText = "Proxy Authentication Required";
 pub const HTTP_REQUEST_TIMEOUT: [15]HTTPStatusText = "Request Timeout";
 pub const HTTP_CONFLICT: [8]HTTPStatusText = "Conflict";
 pub const HTTP_GONE: [4]HTTPStatusText = "Gone";
-pub const HTTP_LENGTH_REQUIRED: [14]HTTPStatusText = "Length Required";
+pub const HTTP_LENGTH_REQUIRED: [15]HTTPStatusText = "Length Required";
 pub const HTTP_PRECONDITION_FAILED: [19]HTTPStatusText = "Precondition Failed";
 pub const HTTP_CONTENT_TOO_LARGE: [17]HTTPStatusText = "Content Too Large";
 pub const HTTP_URI_TOO_LONG: [12]HTTPStatusText = "URI Too Long";
@@ -128,9 +128,9 @@ pub const HTTP_GATEWAY_TIMEOUT: [15]HTTPStatusText = "Gateway Timeout";
 pub const HTTP_VERSION_NOT_SUPPORTED: [26]HTTPStatusText = "HTTP Version Not Supported";
 pub const HTTP_VARIANT_ALSO_NEGOTIATES: [23]HTTPStatusText = "Variant Also Negotiates";
 pub const HTTP_INSUFFICENT_STORAGE: [20]HTTPStatusText = "Insufficient Storage";
-pub const HTTP_LOOP_DETECTED: [15]HTTPStatusText = "Loop Detected";
+pub const HTTP_LOOP_DETECTED: [13]HTTPStatusText = "Loop Detected";
 pub const HTTP_NOT_EXTENDED: [12]HTTPStatusText = "Not Extended";
-pub const HTTP_NETWORK_AUTHENTICATION_REQUIRED: [30]HTTPStatusText = "Network Authentication Required";
+pub const HTTP_NETWORK_AUTHENTICATION_REQUIRED: [31]HTTPStatusText = "Network Authentication Required";
 
 // Hypertext Transfer Protocol Status Code and Status Text Hash Map
 pub fn status_codes_map(allocator: type) type {
