@@ -1,12 +1,12 @@
 const standard: type = @import("std");
 
 // Hypertext Transfer Protocol Version Definition
-pub const HTTPVersion: type = [10]u8;
+pub const HTTPVersion: type = []const u8;
 
 // Hypertext Transfer Protocol Versions
-pub const HTTP_VERSION_ONE: HTTPVersion = "HTTP/1.1";
-pub const HTTP_VERSION_TWO: HTTPVersion = "HTTP/2.0";
-pub const HTTP_VERSION_THREE: HTTPVersion = "HTTP/3.0";
+pub const HTTP_VERSION_ONE: [10]HTTPVersion = "HTTP/1.1";
+pub const HTTP_VERSION_TWO: [10]HTTPVersion = "HTTP/2.0";
+pub const HTTP_VERSION_THREE: [10]HTTPVersion = "HTTP/3.0";
 
 // Hypertext Transfer Protocol Version Vector
 pub fn versions_vector() @Vector(4, HTTPVersion) {

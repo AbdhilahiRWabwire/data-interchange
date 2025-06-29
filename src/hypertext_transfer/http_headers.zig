@@ -1,7 +1,7 @@
 const standard: type = @import("std");
 
 // Hypertext Transfer Protocol Header Definition
-pub const HTTPHeader: type = []u8;
+pub const HTTPHeader: type = []const u8;
 
 // Hypertext Transfer Protocol Headers
 pub const HTTP_ACCEPT: HTTPHeader = "Accept";

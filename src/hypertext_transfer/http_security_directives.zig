@@ -1,7 +1,7 @@
 pub const standard: type = @import("std");
 
 // Hypertext Transfer Protocol Content Security Policy Directive Definition
-pub const HTTPSecurityDirective: type = []u8;
+pub const HTTPSecurityDirective: type = []const u8;
 
 // Hypertext Transfer Protocol Content Security Policy Directives
 pub const HTTP_BASE_URI: [10]HTTPSecurityDirective = "base-uri";

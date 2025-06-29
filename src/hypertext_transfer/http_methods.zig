@@ -1,7 +1,7 @@
 const standard: type = @import("std");
 
 // Hypertext Transfer Protocol Method Defintion
-pub const HTTPMethod: type = []u8;
+pub const HTTPMethod: type = []const u8;
 
 // Hypertext Transfer Protocol Methods
 pub const HTTP_CONNECT: [8]HTTPMethod = "CONNECT";
