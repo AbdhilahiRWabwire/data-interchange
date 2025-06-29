@@ -8,8 +8,20 @@ const versions: type = @import("./http_versions.zig");
 // Hypertext Transfer Protocol Body Definition
 pub const HTTPBody: type = type;
 
-// Hypertext Transfer Protocol Message Definition
-pub const HypertextTransferMessage: type = struct {
+// Hypertext Transfer Protocol Request Definition
+pub const HTTPRequest: type = struct {
+    body: ?HTTPBody,
+    headers: @Vector(97, headers.HTTPHeader),
+    method: methods.HTTPMethod,
+    path: []const u8,
+    security_directives: ?@Vector(24, security.HTTPSecurityDirective),
+    status_code: status.HTTPStatusCode,
+    status_text: status.HTTPStatusText,
+    version: versions.HTTPVersion,
+};
+
+// Hypertext Transfer Protocol Response Definition
+pub const HTTPResponse: type = struct {
     body: ?HTTPBody,
     headers: @Vector(97, headers.HTTPHeader),
     method: methods.HTTPMethod,
@@ -18,3 +30,13 @@ pub const HypertextTransferMessage: type = struct {
     status_text: status.HTTPStatusText,
     version: versions.HTTPVersion,
 };
+
+// Hypertext Transfer Protocol Request Message
+pub fn request_message(request: HTTPRequest, allocator: type) type {
+    return type;
+}
+
+// Hypertext Transfer Protocol Response Message
+pub fn reponse_message(response: HTTPResponse, allocator: type) type {
+    return type;
+}

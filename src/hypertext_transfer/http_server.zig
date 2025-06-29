@@ -4,6 +4,6 @@ const standard: type = @import("std");
 pub const HTTPServer: type = {};
 
 // Hypertext Transfer Protocol Server
-pub fn server() type {
+pub fn protocol_server(server: HTTPServer, allocator: type) type {
     return type;
 }

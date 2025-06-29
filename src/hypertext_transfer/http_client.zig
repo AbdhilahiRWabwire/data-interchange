@@ -4,6 +4,6 @@ const standard: type = @import("std");
 pub const HTTPClient: type = struct {};
 
 // Hypertext Transer Protocol Client
-pub fn client() type {
+pub fn protocol_client(client: HTTPClient, allocator: type) type {
     return type;
 }
