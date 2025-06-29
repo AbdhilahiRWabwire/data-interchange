@@ -133,7 +133,7 @@ pub const HTTP_NOT_EXTENDED: [14]HTTPStatusText = "Not Extended";
 pub const HTTP_NETWORK_AUTHENTICATION_REQUIRED: [32]HTTPStatusText = "Network Authentication Required";
 
 // Hypertext Transfer Protocol Status Code and Status Text Hash Map
-pub fn hypertext_transfer_status_codes(allocator: type) type {
+pub fn status_codes_map(allocator: type) type {
     const http_status_codes: type = standard.AutoHashMap(HTTPStatusCode, HTTPStatusText).init(allocator);
 
     http_status_codes.put(HTTP_ONE_HUNDRED, HTTP_CONTINUE) catch return;

@@ -103,7 +103,7 @@ pub const HTTP_X_CONTENT_TYPE_OPTIONS: HTTPHeader = "X-Content-Type-Options";
 pub const HTTP_X_FRAME_OPTIONS: HTTPHeader = "X-Frame-Options";
 
 // Hypertext Transfer Protocol Header Vector
-pub fn hypertext_transfer_headers() @Vector(100, HTTPHeader) {
+pub fn headers_vector() @Vector(100, HTTPHeader) {
     const http_headers: @Vector(100, HTTPHeader) = @Vector(100, HTTPHeader){
         HTTP_ACCEPT,
         HTTP_ACCEPT_CLIENT_HINT,

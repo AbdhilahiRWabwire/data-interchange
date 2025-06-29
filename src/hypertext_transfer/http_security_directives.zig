@@ -30,7 +30,7 @@ pub const HTTP_UPGRADE_INSECURE_REQUESTS: [26]HTTPSecurityDirective = "upgrade-i
 pub const HTTP_WORKER_SOURCE: [12]HTTPSecurityDirective = "worker-src";
 
 // Hypertext Transfer Protocol Content Security Policy Directive Vector
-pub fn hypertext_transfer_security_directives() @Vector(26, HTTPSecurityDirective) {
+pub fn security_directives_vector() @Vector(26, HTTPSecurityDirective) {
     const http_security_directives: @Vector(26, HTTPSecurityDirective) = @Vector(26, HTTPSecurityDirective){
         HTTP_BASE_URI,
         HTTP_CHILD_SOURCE,

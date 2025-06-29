@@ -15,7 +15,7 @@ pub const HTTP_PUT: [4]HTTPMethod = "PUT";
 pub const HTTP_TRACE: [6]HTTPMethod = "TRACE";
 
 // Hypertext Transfer Protocol Method Vector
-pub fn hypertext_transfer_methods() @Vector(10, HTTPMethod) {
+pub fn methods_vector() @Vector(10, HTTPMethod) {
     const http_methods: @Vector(10, HTTPMethod) = @Vector(10, HTTPMethod){
         HTTP_CONNECT,
         HTTP_DELETE,
