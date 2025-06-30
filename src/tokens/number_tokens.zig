@@ -15,7 +15,7 @@ pub const SEVEN_TOKEN: [1]NumberToken = "7";
 pub const EIGHT_TOKEN: [1]NumberToken = "8";
 pub const NINE_TOKEN: [1]NumberToken = "9";
 
-// Number Tokens Vector
+// Number Token Vector
 pub fn numbers_vector() @Vector(10, NumberToken) {
     const numbers: @Vector(10, NumberToken) = @Vector(10, NumberToken){
         ZERO_TOKEN,

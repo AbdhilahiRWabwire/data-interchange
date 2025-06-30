@@ -27,7 +27,7 @@ pub const SUBTRACTION_TOKEN: [1]OperatorToken = "-";
 pub const SUBTRACTION_ASSIGNMENT_TOKEN: [2]OperatorToken = "-=";
 pub const RANGE_TOKEN: [2]OperatorToken = "..";
 
-// Operator Tokens Vector
+// Operator Token Vector
 pub fn operators_vector() @Vector(22, OperatorToken) {
     const operators: @Vector(22, OperatorToken) = @Vector(22, OperatorToken){
         ADDITION_TOKEN,

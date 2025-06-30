@@ -57,7 +57,7 @@ pub const CAPITAL_X_TOKEN: [1]CharacterToken = "X";
 pub const CAPITAL_Y_TOKEN: [1]CharacterToken = "Y";
 pub const CAPITAL_Z_TOKEN: [1]CharacterToken = "Z";
 
-// Character Tokens Vector
+// Character Token Vector
 pub fn characters_vector() @Vector(48, CharacterToken) {
     const characters: @Vector(48, CharacterToken) = @Vector(48, CharacterToken){
         A_TOKEN,
