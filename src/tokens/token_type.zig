@@ -7,10 +7,10 @@ pub const TokenType: type = []const u8;
 pub const CHARACTER_TOKEN: [9]TokenType = "CHARACTER";
 pub const COMMENT_TOKEN: [7]TokenType = "COMMENT";
 pub const DELIMITER_TOKEN: [9]TokenType = "DELIMITER";
+pub const ESCAPE_TOKEN: [6]TokenType = "ESCAPE";
 pub const KEYWORD_TOKEN: [7]TokenType = "KEYWORD";
 pub const NUMBER_TOKEN: [6]TokenType = "NUMBER";
 pub const OPERATOR_TOKEN: [8]TokenType = "OPERATOR";
-pub const PUNCTUATION_TOKEN: [6]TokenType = "PUNCTUATION";
 
 // Token Type Vector
 pub fn token_types_vector() @Vector(7, TokenType) {
@@ -18,10 +18,10 @@ pub fn token_types_vector() @Vector(7, TokenType) {
         CHARACTER_TOKEN,
         COMMENT_TOKEN,
         DELIMITER_TOKEN,
+        ESCAPE_TOKEN,
         KEYWORD_TOKEN,
         NUMBER_TOKEN,
         OPERATOR_TOKEN,
-        PUNCTUATION_TOKEN,
     };
 
     return token_types;
