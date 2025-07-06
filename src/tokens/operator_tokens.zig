@@ -13,12 +13,15 @@ pub const BITWISE_SHIFT_LEFT_TOKEN: [2]OperatorToken = "<<";
 pub const BITWISE_SHIFT_RIGHT_TOKEN: [2]OperatorToken = ">>";
 pub const BITWISE_SHIFT_LEFT_ASSIGNMENT_TOKEN: [3]OperatorToken = "<<=";
 pub const BITWISE_SHIFT_RIGHT_ASSIGNMENT_TOKEN: [3]OperatorToken = ">>=";
+pub const COLON_TOKEN: [1]OperatorToken = ":";
+pub const COMMA_TOKEN: [1]OperatorToken = ",";
 pub const DIVISION_TOKEN: [1]OperatorToken = "/";
 pub const DIVISION_ASSIGNMENT_TOKEN: [2]OperatorToken = "/=";
 pub const DOLLAR_SIGN_TOKEN: [1]OperatorToken = "$";
 pub const EQUALITY_TOKEN: [2]OperatorToken = "==";
 pub const EXCLUSIVE_OR_TOKEN: [1]OperatorToken = "^";
 pub const FIELD_ACCESS_TOKEN: [1]OperatorToken = ".";
+pub const GRAVE_ACCENT_TOKEN: [1]OperatorToken = "`";
 pub const GREATER_THAN_TOKEN: [1]OperatorToken = ">";
 pub const GREATER_OR_EQUAL_TOKEN: [2]OperatorToken = ">=";
 pub const INCLUSIVE_RANGE_TOKEN: [3]OperatorToken = "..=";
@@ -45,8 +48,8 @@ pub const UNDERSCORE_TOKEN: [1]OperatorToken = "_";
 pub const VARIADIC_RANGE_TOKEN: [3]OperatorToken = "...";
 
 // Operator Token Vector
-pub fn operators_vector() @Vector(48, OperatorToken) {
-    const operators: @Vector(48, OperatorToken) = @Vector(48, OperatorToken){
+pub fn operators_vector() @Vector(51, OperatorToken) {
+    const operators: @Vector(51, OperatorToken) = @Vector(51, OperatorToken){
         ADDITION_TOKEN,
         ADDITION_ASSIGNMENT_TOKEN,
         AND_TOKEN,
@@ -56,12 +59,15 @@ pub fn operators_vector() @Vector(48, OperatorToken) {
         BITWISE_SHIFT_RIGHT_TOKEN,
         BITWISE_SHIFT_LEFT_ASSIGNMENT_TOKEN,
         BITWISE_SHIFT_RIGHT_ASSIGNMENT_TOKEN,
+        COLON_TOKEN,
+        COMMA_TOKEN,
         DIVISION_TOKEN,
         DIVISION_ASSIGNMENT_TOKEN,
         DOLLAR_SIGN_TOKEN,
         EQUALITY_TOKEN,
         EXCLUSIVE_OR_TOKEN,
         FIELD_ACCESS_TOKEN,
+        GRAVE_ACCENT_TOKEN,
         GREATER_THAN_TOKEN,
         GREATER_OR_EQUAL_TOKEN,
         INCLUSIVE_RANGE_TOKEN,
