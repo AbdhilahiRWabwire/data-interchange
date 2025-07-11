@@ -4,8 +4,10 @@
 #include <string>
 #include <vector>
 
+using namespace std;
+
 // Escape Token Defintion
-typedef std::string EscapeToken;
+typedef string EscapeToken;
 
 // Escape Tokens
 const EscapeToken APOSTROPHE_TOKEN;
@@ -16,6 +18,6 @@ const EscapeToken QUOTATION_MARK_TOKEN;
 const EscapeToken TAB_TOKEN;
 
 // Escape Token Vector
-std::vector<EscapeToken> strings_vector();
+vector<EscapeToken> strings_vector();
 
 #endif

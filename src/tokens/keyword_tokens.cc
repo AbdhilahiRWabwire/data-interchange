@@ -1,8 +1,10 @@
 #include <string>
 #include <vector>
 
+using namespace std;
+
 // Keyword Token Defintion
-typedef std::string KeywordToken;
+typedef string KeywordToken;
 
 // Keyword Tokens
 const KeywordToken ABSTRACT_TOKEN = "abstract";
@@ -78,8 +80,8 @@ const KeywordToken WHERE_TOKEN = "where";
 const KeywordToken WHILE_TOKEN = "while";
 
 // Keyword Token Vector
-std::vector<KeywordToken> keywords_vector() {
-    const std::vector<KeywordToken> keywords = {
+vector<KeywordToken> keywords_vector() {
+    const vector<KeywordToken> keywords = {
         ABSTRACT_TOKEN,
         ANY_TOKEN,
         AS_TOKEN,

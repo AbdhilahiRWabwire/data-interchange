@@ -4,8 +4,10 @@
 #include <string>
 #include <vector>
 
+using namespace std;
+
 // Keyword Token Defintion
-typedef std::string KeywordToken;
+typedef string KeywordToken;
 
 // Keyword Tokens
 const KeywordToken ABSTRACT_TOKEN;
@@ -81,6 +83,6 @@ const KeywordToken WHERE_TOKEN;
 const KeywordToken WHILE_TOKEN;
 
 // Keyword Token Vector
-std::vector<KeywordToken> keywords_vector();
+vector<KeywordToken> keywords_vector();
 
 #endif

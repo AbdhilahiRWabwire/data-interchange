@@ -1,8 +1,10 @@
 #include <string>
 #include <vector>
 
+using namespace std;
+
 // Number Token Defintion
-typedef std::string NumberToken;
+typedef string NumberToken;
 
 // Number Tokens
 const NumberToken ZERO_TOKEN = "0";
@@ -17,8 +19,8 @@ const NumberToken EIGHT_TOKEN = "8";
 const NumberToken NINE_TOKEN = "9";
 
 // Number Token Vector
-std::vector<NumberToken> numbers_vector() {
-    const std::vector<NumberToken> numbers = {
+vector<NumberToken> numbers_vector() {
+    const vector<NumberToken> numbers = {
         ZERO_TOKEN,
         ONE_TOKEN,
         TWO_TOKEN,

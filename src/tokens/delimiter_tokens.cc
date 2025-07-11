@@ -1,8 +1,10 @@
 #include <string>
 #include <vector>
 
+using namespace std;
+
 // Delimiter Token Defintion
-typedef std::string DelimiterToken;
+typedef string DelimiterToken;
 
 // Delimiter Tokens
 const DelimiterToken LEFT_BRACKET_TOKEN = "{";
@@ -13,8 +15,8 @@ const DelimiterToken RIGHT_PARENTHESIS_TOKEN = ")";
 const DelimiterToken RIGHT_SQUARE_BRACKET_TOKEN = "]";
 
 // Delimiter Token Vector
-std::vector<DelimiterToken> delimiters_vector() {
-    const std::vector<DelimiterToken> delimiters = {
+vector<DelimiterToken> delimiters_vector() {
+    const vector<DelimiterToken> delimiters = {
         LEFT_BRACKET_TOKEN,
         LEFT_PARENTHESIS_TOKEN,
         LEFT_SQUARE_BRACKET_TOKEN,

@@ -4,8 +4,10 @@
 #include <string>
 #include <vector>
 
+using namespace std;
+
 // Token Type Defintion
-typedef std::string TokenType;
+typedef string TokenType;
 
 // Token Types
 const TokenType CHARACTER_TOKEN;
@@ -18,6 +20,6 @@ const TokenType NUMBER_TOKEN;
 const TokenType OPERATOR_TOKEN;
 
 // Token Type Vector
-std::vector<TokenType> token_types_vector();
+vector<TokenType> token_types_vector();
 
 #endif

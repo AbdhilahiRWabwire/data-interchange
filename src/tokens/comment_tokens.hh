@@ -4,8 +4,10 @@
 #include <string>
 #include <vector>
 
+using namespace std;
+
 // Comment Token Defintion
-typedef std::string CommentToken;
+typedef string CommentToken;
 
 // Comment Tokens
 const CommentToken BLOCK_TOKEN;
@@ -22,6 +24,6 @@ const CommentToken OCTOTHROPE_OUTER_LINE_TOKEN;
 const CommentToken OCTOTHORPE_OUTER_BLOCK_TOKEN;
 
 // Comment Token Vector
-std::vector<CommentToken> comments_vector();
+vector<CommentToken> comments_vector();
 
 #endif
