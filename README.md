@@ -1,6 +1,15 @@
+[Abseil]: https://abseil.io/
+[Boost]: https://www.boost.org/
+[C Language]: https://learn.microsoft.com/en-us/cpp/c-language/
+[CC Language]: https://learn.microsoft.com/en-us/cpp/cpp/
+[Clang]: https://clang.llvm.org/
+[ClangD]: https://clangd.llvm.org/
 [CommonMark]:https://commonmark.org/
 [HTTP]: https://developer.mozilla.org/en-US/docs/Web/HTTP
 [JSON]: https://www.json.org/json-en.html
+[LLVM]: https://llvm.org/
+[LLDB]: https://lldb.llvm.org/
+[LLD]: https://lld.llvm.org/
 [TOML]: https://toml.io/en/
 [Web Transport]: https://w3c.github.io/webtransport/
 [YAML]: https://yaml.org/
@@ -23,7 +32,16 @@ Data Interchange Format and Network Protocol Implementations
 
 ## Build
 
+- [C][C Language]
+- [C++][CC Language]
 - [Zig][Zig Language]
+- [LLVM IR][LLVM]
+- [Clang Compiler][Clang]
+- [ClangD Language Server][ClangD]
+- [LLDB Debugger][LLDB]
+- [LLD Linker][LLD]
+- [Abseil Libraries][Abseil]
+- [Boost Libraries][Boost]
 
 ```shell
 git clone
