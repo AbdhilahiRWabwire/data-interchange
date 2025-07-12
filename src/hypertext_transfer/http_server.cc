@@ -1,9 +1,13 @@
-const standard: type = @import("std");
+#include "./http_server.hh"
 
-// Hypertext Transer Protocol Server
-pub const HttpServer: type = {};
-
-// Hypertext Transfer Protocol Server
-pub fn protocol_server(server: HttpServer, allocator: type) type {
-    return type;
+namespace hypertext_transfer {
+    // Hypertext Transer Protocol Server
+    struct HttpServer {
+    
+    };
+    
+    // Hypertext Transfer Protocol Server
+    HttpServer protocol_server(HttpServer server) {
+        return server;
+    }
 }
