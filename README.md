@@ -4,6 +4,7 @@
 [CC Language]: https://learn.microsoft.com/en-us/cpp/cpp/
 [Clang]: https://clang.llvm.org/
 [ClangD]: https://clangd.llvm.org/
+[CMake]: https://cmake.org/
 [CommonMark]:https://commonmark.org/
 [HTTP]: https://developer.mozilla.org/en-US/docs/Web/HTTP
 [JSON]: https://www.json.org/json-en.html
@@ -40,6 +41,7 @@ Data Interchange Format and Network Protocol Implementations
 - [ClangD Language Server][ClangD]
 - [LLDB Debugger][LLDB]
 - [LLD Linker][LLD]
+- [CMake Build System][CMake]
 - [Abseil Libraries][Abseil]
 - [Boost Libraries][Boost]
 
