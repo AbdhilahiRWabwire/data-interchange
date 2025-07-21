@@ -99,7 +99,7 @@ namespace hypertext_transfer {
     const HttpHeader HTTP_TRAILER = "Trailer";
     const HttpHeader HTTP_TRANSFER_ENCODING = "Transfer-Encoding";
     const HttpHeader HTTP_UPGRADE = "Upgrade";
-    const HttpHeader HTTP_UPGRADE_INSECURE_REQUESTS = "Upgrade-Insecure-Requests";
+    const HttpHeader HTTP_UPGRADE_REQUESTS = "Upgrade-Insecure-Requests";
     const HttpHeader HTTP_USER_AGENT = "User-Agent";
     const HttpHeader HTTP_VARY = "Vary";
     const HttpHeader HTTP_VIA_PROXY = "Via";

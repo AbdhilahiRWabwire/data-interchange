@@ -95,7 +95,7 @@ namespace hypertext_transfer {
             HTTP_TRAILER,
             HTTP_TRANSFER_ENCODING,
             HTTP_UPGRADE,
-            HTTP_UPGRADE_INSECURE_REQUESTS,
+            HTTP_UPGRADE_REQUESTS,
             HTTP_USER_AGENT,
             HTTP_VARY,
             HTTP_VIA_PROXY,
