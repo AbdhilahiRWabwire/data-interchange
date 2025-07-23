@@ -1,5 +1,6 @@
 # CMake Minimum Version
 cmake_minimum_required(VERSION 3.31)
+
 # Project Name
 project("data_interchange" CXX)
 
@@ -10,6 +11,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED true)
 # CMake Package Management
 find_package(boost 1.88.0 REQUIRED)
 find_package(absl 20250512.1 REQUIRED)
+find_package(openssl 3.5.1 REQUIRED)
+find_package(zlib 1.3.1 REQUIRED)
 
 # Source Files
 file(GLOB SOURCE_FILES ./src/*.cc ./src/*.hh)

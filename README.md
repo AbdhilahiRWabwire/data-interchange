@@ -11,10 +11,12 @@
 [LLVM]: https://llvm.org/
 [LLDB]: https://lldb.llvm.org/
 [LLD]: https://lld.llvm.org/
+[OpenSSL]: https://openssl.org/
 [TOML]: https://toml.io/en/
 [Web Transport]: https://w3c.github.io/webtransport/
 [YAML]: https://yaml.org/
 [Zig Language]: https://ziglang.org/
+[ZLib]: https://zlib.net/
 
 # Data Interchange
 
@@ -44,6 +46,8 @@ Data Interchange Format and Network Protocol Implementations
 - [CMake Build System][CMake]
 - [Abseil Libraries][Abseil]
 - [Boost Libraries][Boost]
+- [Open SSL][OpenSSL]
+- [Zip Library][ZLib]
 
 ```shell
 git clone
