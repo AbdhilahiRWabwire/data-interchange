@@ -12,11 +12,11 @@
 [LLDB]: https://lldb.llvm.org/
 [LLD]: https://lld.llvm.org/
 [OpenSSL]: https://openssl.org/
+[LZMA]: https://tukaani.org/
 [TOML]: https://toml.io/en/
 [Web Transport]: https://w3c.github.io/webtransport/
 [YAML]: https://yaml.org/
 [Zig Language]: https://ziglang.org/
-[ZLib]: https://zlib.net/
 
 # Data Interchange
 
@@ -47,7 +47,7 @@ Data Interchange Format and Network Protocol Implementations
 - [Abseil Libraries][Abseil]
 - [Boost Libraries][Boost]
 - [Open SSL][OpenSSL]
-- [Zip Library][ZLib]
+- [Zip Library][LZMA]
 
 ```shell
 git clone
