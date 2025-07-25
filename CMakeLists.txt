@@ -18,8 +18,8 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED true)
 
 # C and C++ Compilers
-set(CMAKE_C_COMPILER "clang")
-set(CMAKE_CXX_COMPILER "clang++")
+set(CMAKE_C_COMPILER "/usr/bin/clang")
+set(CMAKE_CXX_COMPILER "/usr/bin/clang++")
 
 # C and C++ Compiler Flags
 set(CMAKE_C_FLAGS "-fsanitize-address-use-after-scope" "-fsanitize-address-use-odr-indicator" "-fsanitize-cfi-cross-dso" "-fsanitize-memory-param-retval" "-fsanitize-memory-track-origins" "-fsanitize-memory-use-after-dtor" "-Wall" "-Wextra")
