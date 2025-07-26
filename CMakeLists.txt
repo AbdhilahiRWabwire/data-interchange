@@ -18,15 +18,12 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED true)
 
 # C and C++ Compilers
-set(CMAKE_C_COMPILER "/usr/bin/clang")
-set(CMAKE_CXX_COMPILER "/usr/bin/clang++")
+set(CMAKE_C_COMPILER "/usr/bin/gcc")
+set(CMAKE_CXX_COMPILER "/usr/bin/g++")
 
 # C and C++ Compiler Flags
-set(CMAKE_C_FLAGS "-fsanitize-address-use-after-scope" "-fsanitize-address-use-odr-indicator" "-fsanitize-cfi-cross-dso" "-fsanitize-memory-param-retval" "-fsanitize-memory-track-origins" "-fsanitize-memory-use-after-dtor" "-Wall" "-Wextra")
-set(CMAKE_CXX_FLAGS "-fsanitize-address-use-after-scope" "-fsanitize-address-use-odr-indicator" "-fsanitize-cfi-cross-dso" "-fsanitize-memory-param-retval" "-fsanitize-memory-track-origins" "-fsanitize-memory-use-after-dtor" "-Wall" "-Wextra")
-
-# Source Files
-file(GLOB_RECURSE SOURCE_FILES "./src/*.cc" "./src/*.hh")
+set(CMAKE_C_FLAGS "-Wall" "-Wextra")
+set(CMAKE_CXX_FLAGS "-Wall" "-Wextra")
 
 # CMake Package Management
 include(FetchContent)
@@ -71,16 +68,6 @@ FetchContent_Declare(
   GIT_TAG        "8ce699c7d8c10a7d3e6187bc98244d1d2f2958c8" # VERSION 1.88.0
 )
 FetchContent_Declare(
-  "coroutine2"
-  GIT_REPOSITORY "https://github.com/boostorg/coroutine2.git"
-  GIT_TAG        "dbbf042e0a9081b4119d491b788ae0fe7c03192a" # VERSION 1.88.0
-)
-FetchContent_Declare(
-  "container"
-  GIT_REPOSITORY "https://github.com/boostorg/container.git"
-  GIT_TAG        "866fd30df1ab723e2104e3de504f4a8c116f2c41" # VERSION 1.88.0
-)
-FetchContent_Declare(
   "filesystem"
   GIT_REPOSITORY "https://github.com/boostorg/filesystem.git"
   GIT_TAG        "30b312e5c0335831af61ad16802e888f5fb344ea" # VERSION 1.88.0
@@ -111,11 +98,6 @@ FetchContent_Declare(
   GIT_TAG        "eac774af78faa3ee5f86dc638eb6cd02482d6c35" # VERSION 1.88.0
 )
 FetchContent_Declare(
-  "serialization"
-  GIT_REPOSITORY "https://github.com/boostorg/serialization.git"
-  GIT_TAG        "a20c4d97c37e5f437c8ba78f296830edb79cff9e" # VERSION 1.88.0
-)
-FetchContent_Declare(
   "json"
   GIT_REPOSITORY "https://github.com/boostorg/json.git"
   GIT_TAG        "0b1048adf7571b42ae9f684b63e4383241b9e4a1" # VERSION 1.88.0
@@ -137,12 +119,37 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable("abseil" "boost" "openssl" "libzip")
 
+# Source Executable Name
 set(SOURCE_EXECUTABLE "htdi")
 
-# Compiled Source Executable
-add_executable(${SOURCE_EXECUTABLE} ${SOURCE_FILES})
+# Source Files
+file(GLOB_RECURSE SOURCE_FILES "./src/*.cc")
 
-# Linked Libraries
+# Header Files
+file(GLOB_RECURSE HEADER_FILES "./src/*.hh")
+
+# Precompiled Header Files
+file(GLOB_RECURSE PRECOMPILED_HEADER_FILES "./src/*.pch")
+
+# Add Executable
+add_executable(${SOURCE_EXECUTABLE})
+
+# Target Compile Options
+target_compile_options(
+  ${SOURCE_EXECUTABLE}
+  CMAKE_C_COMPILER "/usr/bin/clang"  
+  CMAKE_CXX_COMPILER "/usr/bin/clang++"
+  CMAKE_C_FLAGS "-fsanitize-address-use-after-scope" "-fsanitize-address-use-odr-indicator" "-fsanitize-cfi-cross-dso" "-fsanitize-memory-param-retval" "-fsanitize-memory-track-origins" "-fsanitize-memory-use-after-dtor" "-Wall" "-Wextra"
+  CMAKE_CXX_FLAGS "-fsanitize-address-use-after-scope" "-fsanitize-address-use-odr-indicator" "-fsanitize-cfi-cross-dso" "-fsanitize-memory-param-retval" "-fsanitize-memory-track-origins" "-fsanitize-memory-use-after-dtor" "-Wall" "-Wextra"
+)
+
+# Target Precompile Headers
+target_precompile_headers(${SOURCE_EXECUTABLE} ${HEADER_FILES})
+
+# Target Sources
+target_sources(${SOURCE_EXECUTABLE} ${SOURCE_FILES} ${PRECOMPILED_HEADER_FILES})
+
+# Target Link Libraries
 target_link_libraries(${SOURCE_EXECUTABLE} "abseil")
 target_link_libraries(${SOURCE_EXECUTABLE} "boost")
 target_link_libraries(${SOURCE_EXECUTABLE} "openssl")
