@@ -137,12 +137,14 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable("abseil" "boost" "openssl" "libzip")
 
-# Compiled So88ce Executable
-add_executable("htdi" ${SOURCE_FILES})
+set(SOURCE_EXECUTABLE "htdi")
+
+# Compiled Source Executable
+add_executable(${SOURCE_EXECUTABLE} ${SOURCE_FILES})
 
 # Linked Libraries
-target_link_libraries("htdi" "abseil")
-target_link_libraries("htdi" "boost")
-target_link_libraries("htdi" "openssl")
-target_link_libraries("htdi" "libzip")
+target_link_libraries(${SOURCE_EXECUTABLE} "abseil")
+target_link_libraries(${SOURCE_EXECUTABLE} "boost")
+target_link_libraries(${SOURCE_EXECUTABLE} "openssl")
+target_link_libraries(${SOURCE_EXECUTABLE} "libzip")
 

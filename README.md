@@ -1,5 +1,3 @@
-[Abseil]: https://abseil.io/
-[Boost]: https://www.boost.org/
 [C Language]: https://learn.microsoft.com/en-us/cpp/c-language/
 [CC Language]: https://learn.microsoft.com/en-us/cpp/cpp/
 [Clang]: https://clang.llvm.org/
@@ -11,8 +9,6 @@
 [LLVM]: https://llvm.org/
 [LLDB]: https://lldb.llvm.org/
 [LLD]: https://lld.llvm.org/
-[LibZip]: https://libzip.org/
-[OpenSSL]: https://openssl.org/
 [TOML]: https://toml.io/en/
 [Web Transport]: https://w3c.github.io/webtransport/
 [YAML]: https://yaml.org/
@@ -44,15 +40,13 @@ Data Interchange Format and Network Protocol Implementations
 - [LLDB Debugger][LLDB]
 - [LLD Linker][LLD]
 - [CMake Build System][CMake]
-- [Abseil Libraries][Abseil]
-- [Boost Libraries][Boost]
-- [Open SSL][OpenSSL]
-- [Zip Library][LibZip]
 
 ```shell
 git clone
 
 zig build
+||
+cmake -B ./build -S ./
 ```
 
 ## Install
