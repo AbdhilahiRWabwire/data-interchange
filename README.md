@@ -45,7 +45,9 @@ Data Interchange Format and Network Protocol Implementations
 git clone
 
 zig build
+
 ||
+
 cmake -B ./build -S ./
 ```
 
